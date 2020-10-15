@@ -14,11 +14,11 @@ jobs:
       
       - name: Install and Build 🔧 # This example project is built using npm and outputs the result to the 'build' folder. Replace with the commands required to build your project, or remove this step entirely if your site is pre-built.
         run: |
-          sudo rm -rf ./build
+          su rm -rf ./build
           mkdir ./build
-          cp ./index.html /build
-          cp ./style.css /build
-          cp ./functions.js /build
+          cp ./index.html /build/index.html
+          cp ./style.css /build/style.css
+          cp ./functions.js /build/functions.js
     
 
       - name: Deploy 🚀
