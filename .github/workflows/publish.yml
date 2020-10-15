@@ -16,9 +16,9 @@ jobs:
         run: |
           sudo rm -rf ./build
           mkdir ./build
-          cp ./index.html /build/index.html
-          cp ./style.css /build/style.css
-          cp ./functions.js /build/functions.js
+          cp ./index.html ./build/index.html
+          cp ./style.css ./build/style.css
+          cp ./functions.js ./build/functions.js
     
 
       - name: Deploy 🚀
